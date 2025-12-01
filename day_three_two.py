@@ -33,3 +33,8 @@ print(np.max(arr, axis=2)) # This will give the largest values across all cols i
 print(np.min(arr, axis=0)) 
 print(np.min(arr, axis=1)) 
 print(np.min(arr, axis=2)) 
+
+
+print(np.mean(arr, axis=0))  # Mean across sheets
+print(np.mean(arr, axis=1))  # Mean across rows in each sheet
+print(np.mean(arr, axis=2))  # Mean across columns in each row
