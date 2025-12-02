@@ -31,9 +31,9 @@ b = np.array([[1], [2], [3], [4], [5]])
 Z = np.dot(W, X) + b   # shape = (5,4)
 print("Z = np.dot(W, X) + b:\n", Z, "\n")
 
-# -----------------------
+
 # 5. ACTIVATION FUNCTIONS
-# -----------------------
+
 
 # ReLU
 relu = np.maximum(0, Z)
