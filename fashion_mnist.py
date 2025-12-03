@@ -38,3 +38,19 @@ model.add(layers.Flatten())
 model.add(layers.Dense(10, activation='softmax'))
 
 model.summary()
+
+
+model.compile(
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+# 8️⃣ Fit the model
+history = model.fit(
+    X_train, y_train,
+    epochs=10,
+    batch_size=32,
+    validation_split=0.1,
+    verbose=1
+)
