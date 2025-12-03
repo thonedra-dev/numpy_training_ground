@@ -15,3 +15,15 @@ for i in range(10):
   print(f"This X_train has the minimum value of {X_train.min()} and maximum value of {X_train.max()}")
   print()
 
+X_train = X_train.astype('float32')/255.0
+X_test  = X_test.astype('float32')/255.0
+
+X_train = X_train.reshape(-1, 28, 28, 1)
+X_test  = X_test.reshape(-1, 28, 28, 1)
+
+from tensorflow.keras.utils import to_categorical
+y_train = to_categorical(y_train, 10)
+y_test  = to_categorical(y_test, 10)
+
+print(f"New shape of X_train is {X_train.shape}")
+print(f"New shape of X_test is {X_test.shape}")
