@@ -54,3 +54,18 @@ history = model.fit(
     validation_split=0.1,
     verbose=1
 )
+
+test_loss, test_accuracy = model.evaluate(X_test, y_test, verbose = 2)
+
+# Get predictions (probabilities)
+pred_probs = model.predict(X_test)
+
+# Convert probabilities → class labels
+pred_labels = np.argmax(pred_probs, axis=1)
+
+# Convert one-hot y_test → class labels
+true_labels = np.argmax(y_test, axis=1)
+
+# Print first 10 results
+print("First 10 True Labels:     ", true_labels[:10])
+print("First 10 Predicted Labels:", pred_labels[:10])
