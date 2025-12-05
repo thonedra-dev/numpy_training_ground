@@ -230,3 +230,59 @@ datagen = ImageDataGenerator(
 datagen.fit(x_train)
 
 
+# ====================== [4. FAST TRAINING WITH CALLBACKS] ======================
+print("\n⚡ Starting fast training...")
+
+callbacks = [
+    ReduceLROnPlateau(
+        monitor='val_accuracy',
+        factor=0.5,
+        patience=3,
+        min_lr=1e-6,
+        verbose=1
+    ),
+    EarlyStopping(
+        monitor='val_accuracy',
+        patience=8,
+        restore_best_weights=True,
+        verbose=1
+    ),
+    ModelCheckpoint(
+        'fast_cifar10_best.h5',
+        monitor='val_accuracy',
+        save_best_only=True,
+        verbose=0
+    )
+]
+
+# Start timer
+start_time = time.time()
+
+# Train with augmentation
+history = model.fit(
+    datagen.flow(x_train, y_train, batch_size=128),  # Larger batch for speed
+    steps_per_epoch=len(x_train) // 128,
+    epochs=30,
+    validation_data=(x_val, y_val),
+    callbacks=callbacks,
+    verbose=1
+)
+
+training_time = time.time() - start_time
+print(f"\n⏱️ Training completed in {training_time/60:.1f} minutes")
+
+# ====================== [5. QUICK EVALUATION] ======================
+print("\n📊 Evaluating model...")
+
+# Load best weights
+if tf.io.gfile.exists('fast_cifar10_best.h5'):
+    model.load_weights('fast_cifar10_best.h5')
+    print("✅ Loaded best model")
+
+test_loss, test_acc = model.evaluate(x_test, y_test, verbose=0)
+
+print(f"\n{'='*50}")
+print(f"🎯 TEST RESULTS:")
+print(f"   Accuracy: {test_acc:.4f} ({test_acc*100:.2f}%)")
+print(f"   Loss:     {test_loss:.4f}")
+print(f"{'='*50}")
