@@ -40,11 +40,11 @@ What are **Models & Data** -  Secondly ===>  You must choose the Tensorflow ( OR
 ## 🗺️ Learning Path
 Apply your knowledge by building real image classification models.
 
-| Model | Dataset | Task | Complexity |
+| Model | Dataset | Task | Data-Complexity |
 |-------|---------|------|------------|
-| **MNIST** | Handwritten Digits | 10-class classification | Data_Complexity-> ⭐ |
-| **Fashion-MNIST** | Clothing Items | 10-class classification | Data_Complexity-> ⭐⭐ |
-| **CIFAR-10** | Natural Images | 10-class classification | Data_Complexity-> ⭐⭐⭐ |
+| **MNIST** | Handwritten Digits | 10-class classification | ⭐ |
+| **Fashion-MNIST** | Clothing Items | 10-class classification | ⭐⭐ |
+| **CIFAR-10** | Natural Images | 10-class classification | ⭐⭐⭐ |
 
 ---
 
@@ -183,27 +183,6 @@ deeplearning_beginner/
 - 📧 Email me with questions: thonedra.dev@gmail.com
 - 🐛 Report issues in the [Issues](https://github.com/thonedra-dev/deeplearning_beginner/issues) section
 - 💬 Start a discussion in [Discussions](https://github.com/thonedra-dev/deeplearning_beginner/discussions)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Copyright (c) 2025 Thonedra
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files...
-```
-
----
-
-## 🌟 Acknowledgments
-
-- **TensorFlow Team** - For the incredible deep learning framework
-- **NumPy Community** - For the foundation of scientific computing
-- **Google Colab** - For providing free GPU access
-- **Deep Learning Community** - For continuous inspiration and support
 
 ---
 
