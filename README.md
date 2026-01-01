@@ -34,40 +34,6 @@ Welcome to **Deep Learning Beginner** - a carefully curated learning repository 
 ---
 
 ## 🗺️ Learning Path
-
-This repository is structured as a progressive learning journey. Follow the sequence below for optimal understanding:
-
-### Phase 1: Foundation (NumPy Mastery)
-Build your computational foundation with NumPy, the backbone of all deep learning frameworks.
-
-| Notebook | Focus Area | Key Concepts |
-|----------|-----------|--------------|
-| `day_one_one.py` | Array Basics | Array creation, indexing, slicing |
-| `day_one_two.py` | Array Operations | Element-wise operations, broadcasting |
-| `day_one_three.py` | Mathematical Functions | Linear algebra, statistics, aggregations |
-| `day_one_four.py` | Advanced Techniques | Reshaping, stacking, advanced indexing |
-| `day_one_five.py` | Broadcasting & Constraints | Broadcasting rules, memory optimization |
-
-### Phase 2: Deep Learning Foundations
-Understand core concepts that power neural networks.
-
-| Notebook | Focus Area | Key Concepts |
-|----------|-----------|--------------|
-| `day_two_one.py` | Array Manipulation | Multi-dimensional arrays, transpose operations |
-| `day_two_two.py` | Matrix Operations | Dot products, matrix multiplication |
-| `day_two_three.py` | Array Functions | Swapping axes, complex transformations |
-| `day_two_four.py` | Advanced Swapping | 2D/3D array manipulation techniques |
-
-### Phase 3: Advanced Concepts
-Master the mathematical operations behind neural networks.
-
-| Notebook | Focus Area | Key Concepts |
-|----------|-----------|--------------|
-| `day_three_one.py` | 3D Array Processing | Working with image-like data structures |
-| `day_three_two.py` | Row-wise & Column-wise Ops | Aggregations across different axes |
-| `day_three_three.py` | Max Functions | Finding maxima across dimensions |
-
-### Phase 4: Practical Implementation
 Apply your knowledge by building real image classification models.
 
 | Model | Dataset | Task | Complexity |
@@ -181,7 +147,6 @@ Master color image classification with real-world complexity.
 numpy>=1.21.0
 tensorflow>=2.10.0
 matplotlib>=3.5.0
-scikit-learn>=1.0.0
 ```
 
 > 💡 **Pro Tip:** Google Colab comes with all these libraries pre-installed!
