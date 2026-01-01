@@ -21,13 +21,17 @@
 
 ## 📋 Overview
 
-Welcome to **Deep Learning Beginner** - a carefully curated learning repository that bridges the gap between theory and practice. Whether you're starting from scratch or looking to solidify your understanding, this collection provides progressive, hands-on experience with essential deep learning concepts.
+Reason behind **Deep Learning Beginner** - the reason I have developed this project is that, I used to have a lot of headache how I should deep-dive into the deep learning field. I was not even sure that, what was the very first step for it. So, now, I saved my first approach on entering deep learning. 
+
+Why **Numpy** -  First of all ===>  The fundamental building block of the deep learning is numpy, we can say how neural networks are constructed and mathematically processed are directly related with numpy theories.
+
+What are **Models & Data** -  Secondly ===>  You must choose the Tensorflow ( OR ) Pytorch. If your choice is Tensorflow, you are more aligned with this repo. I have built image-classification on labels ( technically, what is inside the image) by using the built-in datasets of datasets provided via TensorFlow’s Keras API.
 
 ### 🎯 What You'll Learn
 
 - **NumPy Fundamentals**: Master array operations, broadcasting, and mathematical functions essential for deep learning
 - **Neural Network Basics**: Understand the building blocks of neural networks through practical examples
-- **Image Classification**: Build and train real models on industry-standard datasets
+- **Image Classification**: Build very basic deep learning models by using Tensorflow built-in image datasets
 - **TensorFlow/Keras**: Get comfortable with the leading deep learning framework
 - **Model Training Pipeline**: Learn data preprocessing, model building, training, and evaluation
 
@@ -38,15 +42,15 @@ Apply your knowledge by building real image classification models.
 
 | Model | Dataset | Task | Complexity |
 |-------|---------|------|------------|
-| **MNIST** | Handwritten Digits | 10-class classification | ⭐ Beginner |
-| **Fashion-MNIST** | Clothing Items | 10-class classification | ⭐⭐ Intermediate |
-| **CIFAR-10** | Natural Images | 10-class classification | ⭐⭐⭐ Advanced |
+| **MNIST** | Handwritten Digits | 10-class classification | Data_Complexity-> ⭐ |
+| **Fashion-MNIST** | Clothing Items | 10-class classification | Data_Complexity-> ⭐⭐ |
+| **CIFAR-10** | Natural Images | 10-class classification | Data_Complexity-> ⭐⭐⭐ |
 
 ---
 
 ## 🚀 Quick Start
 
-### Option 1: Google Colab (Recommended for Beginners)
+### Google Colab (Recommended)
 
 1️⃣ **Clone or Download this Repository**
 ```bash
@@ -61,28 +65,7 @@ git clone https://github.com/thonedra-dev/deeplearning_beginner.git
 - Select `File` → `Upload notebook` or `Open notebook` → `GitHub`
 - Upload individual `.py` or `.ipynb` files
 
-4️⃣ **Run and Learn!**
-- Execute cells sequentially
-- Experiment with parameters
-- Observe outputs and understand behavior
 
-### Option 2: Local Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/thonedra-dev/deeplearning_beginner.git
-cd deeplearning_beginner
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run Jupyter notebook
-jupyter notebook
-```
 
 ---
 
@@ -135,7 +118,6 @@ Master color image classification with real-world complexity.
 ### Required Knowledge
 - Basic Python programming
 - Understanding of functions, loops, and data structures
-- High school mathematics (algebra, basic calculus helpful but not required)
 
 ### Software Requirements
 - Python 3.9 or higher
@@ -157,61 +139,32 @@ matplotlib>=3.5.0
 
 ```
 deeplearning_beginner/
-├── day_one_one.py          # NumPy basics: arrays and indexing
-├── day_one_two.py          # Broadcasting fundamentals
-├── day_one_three.py        # Mathematical operations
-├── day_one_four.py         # Advanced array techniques
-├── day_one_five.py         # Broadcasting constraints
-├── day_two_one.py          # Array classification concepts
-├── day_two_two.py          # Matrix operations
-├── day_two_three.py        # Swapping and transposing
-├── day_two_four.py         # Complex transformations
-├── day_three_one.py        # 3D array understanding
-├── day_three_two.py        # Axis-wise operations
-├── day_three_three.py      # Max functions across arrays
-├── mnist_model.py          # MNIST digit classification
-├── fashion_mnist.py        # Fashion-MNIST implementation
-├── ciphar10_model.py       # CIFAR-10 color images
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
+├── numpy_practice/
+│   ├── day_one_one.py
+│   ├── day_one_two.py
+│   ├── day_one_three.py
+│   ├── day_one_four.py
+│   ├── day_one_five.py
+│   ├── day_two_one.py
+│   ├── day_two_two.py
+│   ├── day_two_three.py
+│   ├── day_two_four.py
+│   ├── day_three_one.py
+│   ├── day_three_two.py
+│   └── day_three_three.py
+│
+├── model_notebooks/
+│   ├── mnist_model.ipynb
+│   ├── fashion_mnist.ipynb
+│   └── cifar10_model.ipynb
+│
+├── requirements.txt
+└── README.md
+
 ```
 
 ---
 
-## 🎓 Learning Tips
-
-### For Complete Beginners
-1. **Don't rush** - Spend time understanding each NumPy operation
-2. **Experiment freely** - Modify code and observe results
-3. **Visualize often** - Use matplotlib to see what's happening
-4. **Start simple** - Begin with MNIST before moving to CIFAR-10
-
-### Best Practices
-- ✅ Run notebooks sequentially from Day 1
-- ✅ Complete all NumPy exercises before models
-- ✅ Take notes on concepts you find challenging
-- ✅ Try modifying model architectures
-- ✅ Compare results across different approaches
-
-### Common Pitfalls to Avoid
-- ❌ Skipping NumPy fundamentals
-- ❌ Not understanding array shapes
-- ❌ Rushing to complex models
-- ❌ Ignoring error messages
-
----
-
-## 🤝 Contributing
-
-Found a bug or have a suggestion? Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
 
 ## 📫 Contact & Support
 
